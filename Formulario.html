@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de registro de usuario</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card presentacion-card">
+            <div class="card-content">
+
+                <h1>FORMULARIO DE CONTACTO</h1>
+
+
+                <div id="registrationForm" class="registrationForm" novalidate>
+                    <label for="fullname">Nombre completo:</label><br>
+                    <input id="fullname" name="fullname" type="text" required placeholder="Ej. Pepito Pérez" autofocus
+                        autocomplete="name" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ'\- ]{3,80}$"
+                        title="Introduce tu nombre completo."><br><br>
+
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com"
+                        autocomplete="email"><br><br>
+
+
+                    <label for="phone">Número de teléfono:</label><br>
+                    <input id="phone" name="phone" type="tel" placeholder="+34 600 123 456" autocomplete="tel"
+                        pattern="^\+?[0-9 \-]{7,20}$"
+                        title="Incluye prefijo opcional + y entre 7 y 20 dígitos/espacios/guiones"><br><br>
+
+
+                    <label for="dob">Fecha de nacimiento:</label><br>
+                    <input id="dob" name="dob" type="date" autocomplete="bday" min="1900-01-01"
+                        max="2007-11-05"><br><br>
+
+
+                    <label for="country">País:</label><br>
+                    <select id="country" name="country" required autocomplete="country">
+                        <option value="">Selecciona tu país</option>
+                        <option value="ES">España</option>
+                        <option value="FR">Francia</option>
+                        <option value="DE">Alemania</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="GB">Reino Unido</option>
+                        <option value="MX">México</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CL">Chile</option>
+                    </select><br><br>
+
+                    <label>Género:</label><br>
+                    <input type="radio" name="gender" value="female" required> Femenino<br>
+                    <input type="radio" name="gender" value="male"> Masculino<br>
+                    <input type="radio" name="gender" value="other"> Otro<br><br>
+
+                    <label for="satisfaction">Nivel de satisfacción con este portfolio (0–10):</label><br>
+                    <input id="satisfaction" name="satisfaction" type="range" min="0" max="10" step="1" value="5">
+                    <output id="satValue">5</output><br><br>
+
+
+
+                    <label for="archivo">Adjuntar Archivo:</label><br>
+                    <input id="archivo" name="archivo" type="file" accept="image/*"><br><br>
+
+                    <form>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje"
+                            placeholder=" ESTE FORMULARIO ESTE TEMPORALMENTE FUERA DE SERVICIO A LA ESPERA DE PRONFUNDIZAR EN SQL EN GESTION DE BASE DE DATOS"></textarea>
+                    </form>
+                    <br>
+                    <div class="volver-btn-container">
+                        <a href="Presentacion copy.html" class="contact-btn volver-btn">VOLVER</a>
+                        <a href="Formulario.html" class="contact-btn volver-btn">ENVIAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
