@@ -107,15 +107,22 @@ body {
 }
 
 .RAID5 {
-  max-width: 600px;
+  
   display: block;
   margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  
 }
 
 .ER {
-  max-width: 800px;
+  
   display: block;
   margin: 0 auto;
+  height: auto;
+  width: 100%;
+  
+  
 }
 
 a {
